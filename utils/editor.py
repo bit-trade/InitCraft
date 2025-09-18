@@ -93,7 +93,7 @@ class ConfigMaker:
         if not os.path.exists(path) and os.path.dirname(path):
             os.makedirs(os.path.dirname(path), exist_ok=True)
 
-        json_string = '{"_comment": "You can find examples of properly formatted JSON files in repository: https://github.com/bit-trade.", "config_files": []}'
+        json_string = '{"_comment": "You can find examples of properly formatted JSON files in repository: https://github.com/bit-trade/InitCraft", "config_files": []}'
         data = json.loads(json_string)
         with open(path, 'w') as f:
             json.dump(data, f, indent=4)
